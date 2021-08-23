@@ -1,0 +1,12 @@
+body{
+    background-image: url(../Images/background.png);
+    background-size: cover;
+}
+
+.navbar{
+    width: 100%;
+}
+
+.card{
+    margin: 90px;
+}

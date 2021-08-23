@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyAoD5awxxpaW3LQ6qhHP8M0qGA5BjHy5B8",
+            authDomain: "hackthon-sajid-ishaq.firebaseapp.com",
+            databaseURL: "https://hackthon-sajid-ishaq-default-rtdb.firebaseio.com",
+            projectId: "hackthon-sajid-ishaq",
+            storageBucket: "hackthon-sajid-ishaq.appspot.com",
+            messagingSenderId: "6821163593",
+            appId: "1:6821163593:web:87d1320f90c811ae25c598"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+</head>
+
+<body>
+    <p class="tip"></p>
+    <div class="cont">
+        <div class="form sign-in">
+            <h2>Welcome To Rabi's Resturant</h2>
+            <label>
+                <span>Email</span>
+                <input type="email" id="login-email" />
+            </label>
+            <label>
+                <span>Password</span>
+                <input type="password" id="login-password" />
+            </label>
+            <p class="forgot-pass">Forgot password?</p>
+            <button type="button" onclick="login()" class="submit">Log In</button>
+            <button type="button" class="fb-btn">Connect with <span>facebook</span></button>
+        </div>
+        <div class="sub-cont">
+            <div class="img">
+                <div class="img__text m--up">
+                    <h2>New here?</h2>
+                    <p>Sign up and discover great amount of new opportunities!</p>
+                </div>
+                <div class="img__text m--in">
+                    <h2>One of us?</h2>
+                    <p>If you already has an account, just sign in. We've missed you!</p>
+                </div>
+                <div class="img__btn">
+                    <span class="m--up">Sign Up</span>
+                    <span class="m--in">Log in</span>
+                </div>
+            </div>
+            <div class="form sign-up">
+                <!-- <h2>Time to feel like Owesum,</h2> -->
+                <label>
+                    <span>Name</span>
+                    <input type="text" id="name" />
+                </label>
+                <label>
+                    <span>Email</span>
+                    <input type="email" id="email" />
+                </label>
+                <label>
+                    <span>Password</span>
+                    <input type="password" id="password" />
+                </label>
+                <label>
+                    <span>Contact No:</span>
+                    <input type="number" id="number" />
+                </label>
+                <label>
+                    <span>City</span>
+                    <input type="text" id="city" />
+                </label>
+                <label>
+                    <span>Are you a </span>
+                    <select id="userType">
+                        <option selected value="Customer">Customer</option>
+                        <option value="Restaurateur">Restaurateur</option>
+                    </select>
+                </label>
+                <button type="button" class="submit" onclick="send()">Sign Up</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="appOne.js"></script>
+</body>
+
+</html>
